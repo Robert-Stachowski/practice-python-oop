@@ -11,10 +11,9 @@ Person_one = Person("Jan", 25, "Warszawie")
 Person_two = Person("Anna", 30, "Krakowie")
 Person_three = Person("Piotr", 35, "Gdańsku")
 
-Person_one.introduce()
-Person_two.introduce()
-Person_three.introduce() 
-# Można tak, na piechotę ;)
+#Person_one.introduce()
+#Person_two.introduce()
+#Person_three.introduce() Można tak, na piechotę ;)
 #albo:
 
 People = [Person_one, Person_two, Person_three]
