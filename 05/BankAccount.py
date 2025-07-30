@@ -31,8 +31,8 @@ class BankAccount:
         return self.__balance
 
 account = BankAccount("Jan Nowak", 1000)
-input_amount = input(f"Podaj kwotę wpłaty, mniejszą niż saldo({account.get_balance}): ")
-output_amount = float(input)
+#input_amount = input(f"Podaj kwotę wpłaty, mniejszą niż saldo({account.get_balance}): ")
+#output_amount = float(input)
 
 account.deposit(300)
 account.withdraw(500)
