@@ -8,18 +8,8 @@ class BankAccount:
             self.__balance += amount            
             return self.__balance
         else:
-            return None
-    
-
-    # do wyboru opcja:
-
-    #def withdraw(self, amount):
-     #   if amount > self.__balance:
-      #      print("Insufficient funds")
-       # else:
-        #    self.__balance -= amount
-         #   print("Withdrew:", amount, "New balance:" , self.__balance)
-
+            return None   
+   
     def withdraw(self, amount):
         if amount <= self.__balance:
             self.__balance -= amount                        
@@ -34,7 +24,6 @@ class BankAccount:
 account = BankAccount("Jan Nowak", 1000)
 
 
-
 while True:
     menu_amount = input("Wpisz polecenie (wplata / wyplata / wyjscie): ")
     if menu_amount == "wyjscie" :
@@ -44,6 +33,7 @@ while True:
         input_amount = input(f"Podaj kwotę wypłaty, mniejszą niż saldo( {account.get_balance()} ): ")
         output_amount = float(input_amount)        
         new_account = account.withdraw(output_amount)
+        
         if new_account is None:
             print("---")
             print("Poucinam paluszki ;P ")
