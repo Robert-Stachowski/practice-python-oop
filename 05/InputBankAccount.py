@@ -24,7 +24,7 @@ class BankAccount:
     def withdraw(self, amount):
         if amount <= self.__balance:
             self.__balance -= amount
-            #print(f"Withdrew: {amount} New balance:  {self.__balance}")
+            
             return self.__balance
         else:
             print("Insufficient funds")
@@ -65,12 +65,3 @@ while True:
     else: 
         print("Halo, halo co tu się odpierdziela?")
         break
-
-
-#account.deposit(300)
-#account.withdraw(500)
-#account.deposit(600)
-#account.withdraw(1000)
-#print("---")
-#print(f"Saldo końcowe: {account.get_balance()}")
-#print("---")
