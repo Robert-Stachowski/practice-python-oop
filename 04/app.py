@@ -5,9 +5,6 @@ class Animal:
     def make_sound(self):
        return "Zwierzę wydaje dźwięk"
 
-        
-    
-
 class Dog(Animal):
     def __init__(self, name):
         super().__init__(name)
@@ -20,8 +17,13 @@ class Cat(Animal):
     def make_sound(self):
         return "Miau miau"
     
+class Bird(Animal): 
+    def __init__(self, name):
+        super().__init__(name) 
+    def make_sound(self):
+        return "Ćwir ćwir"
 
-animals = [Dog("Mruczek"), Dog("Reksio"), Cat("Filemon"), Cat("Bonifacy")]
+animals = [Dog("Mruczek"), Dog("Reksio"), Cat("Filemon"), Cat("Bonifacy"), Bird("Ptaszek 1"), Bird("Ptaszek 2")]
 
 for animal in animals:
     print(f"{animal.name} wydaje dźwięk: {animal.make_sound()}")
