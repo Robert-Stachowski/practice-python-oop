@@ -14,6 +14,6 @@ b4 = Book("Jak żyć bez Pythona?", "Robert Es", "2025")
 b5 = Book("Czy kodzenie to nałóg?", "Robert Es", "1999") 
 b6 = Book("Gotuj z Mysql", "Robert Es", "2004") 
 
-Single = [b1,b2,b3,b4,b5,b6]
-for Book in Single:
+single = [b1,b2,b3,b4,b5,b6]
+for Book in single:
     Book.__str__()
