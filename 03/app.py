@@ -17,15 +17,15 @@ class Teacher(Employee):
     def describe(self):
         print(f" {self.name} jest {self.position} i uczy {self.subject} ")
 
-E1 = Employee("Jerzy Ogórek", "Rolnik") 
-E2 = Employee("Tomasz Problem", "Programista")
-E3 = Employee("Michał Szpak", "Ornitolog")
-E4 = Employee("Witold Boligłowa", "Farmaceuta")
-T1 = Teacher("Maria Ojczenasz", "Katechetką", "Religii")
-T2 = Teacher("Henryk Namysł", "Filozofem", "Filozofii")
-T3 = Teacher("Brajanek Wnuczek", "Historykiem", "Historiii")
-T4 = Teacher("Dorota Niuważny", "Chemiczką(Kobieta-chemik)", "Chemii")
+e1 = Employee("Jerzy Ogórek", "Rolnik") 
+e2 = Employee("Tomasz Problem", "Programista")
+e3 = Employee("Michał Szpak", "Ornitolog")
+e4 = Employee("Witold Boligłowa", "Farmaceuta")
+t1 = Teacher("Maria Ojczenasz", "Katechetką", "Religii")
+t2 = Teacher("Henryk Namysł", "Filozofem", "Filozofii")
+t3 = Teacher("Brajanek Wnuczek", "Historykiem", "Historiii")
+t4 = Teacher("Dorota Niuważny", "Chemiczką(Kobieta-chemik)", "Chemii")
 
-All = [E1,E2,E3,E4,T1,T2,T3,T4]
-for Employee in All:
+all = [e1,e2,e3,e4,t1,t2,t3,t4]
+for Employee in all:
     Employee.describe()

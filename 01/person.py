@@ -7,15 +7,15 @@ class Person:
     def introduce(self):
         print(f"Cześć, mam na imię {self.name} , mam {self.age} i mieszkam w {self.city}")
 
-Person_one = Person("Jan", 25, "Warszawie")
-Person_two = Person("Anna", 30, "Krakowie")
-Person_three = Person("Piotr", 35, "Gdańsku")
+person_one = Person("Jan", 25, "Warszawie")
+person_two = Person("Anna", 30, "Krakowie")
+person_three = Person("Piotr", 35, "Gdańsku")
 
-#Person_one.introduce()
-#Person_two.introduce()
-#Person_three.introduce() Można tak, na piechotę ;)
+#person_one.introduce()
+#person_two.introduce()
+#person_three.introduce() Można tak, na piechotę ;)
 #albo:
 
-People = [Person_one, Person_two, Person_three]
-for Person in People:
+people = [person_one, person_two, person_three]
+for Person in people:
     Person.introduce()

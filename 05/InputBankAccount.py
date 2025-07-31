@@ -5,11 +5,10 @@ class BankAccount:
         
     def deposit(self, amount):
         if amount > 0:
-            self.__balance += amount
-            #print(f"Deposited {amount}. New balance: {self.__balance}")
+            self.__balance += amount            
             return self.__balance
         else:
-            print("Deposit amount must be positive.")   
+            return None
     
 
     # do wyboru opcja:
@@ -23,11 +22,10 @@ class BankAccount:
 
     def withdraw(self, amount):
         if amount <= self.__balance:
-            self.__balance -= amount
-            
-            return self.__balance
-        else:
-            print("Insufficient funds")
+            self.__balance -= amount                        
+            return self.__balance            
+        else:            
+            return None
             
 
     def get_balance(self):
@@ -38,30 +36,32 @@ account = BankAccount("Jan Nowak", 1000)
 
 
 while True:
-    Menu_amount = input("Wpisz polecenie (wplata / wyplata / wyjscie): ")
-    if Menu_amount == "wyjscie" :
+    menu_amount = input("Wpisz polecenie (wplata / wyplata / wyjscie): ")
+    if menu_amount == "wyjscie" :
         break
-    elif Menu_amount == "wyplata" :
-        input_amount = input(f"Podaj kwotę wypłaty, mniejszą niż saldo( {account.get_balance()} ): ")
-        output_amount = float(input_amount)
 
-        if output_amount > account.get_balance():
+    elif menu_amount == "wyplata" :
+        input_amount = input(f"Podaj kwotę wypłaty, mniejszą niż saldo( {account.get_balance()} ): ")
+        output_amount = float(input_amount)        
+        new_account = account.withdraw(output_amount)
+        if new_account is None:
             print("---")
             print("Poucinam paluszki ;P ")
             print("---")
-            break
-        else :
-            new_account = account.withdraw(output_amount)
+        else:
             print(f"Saldo po wypłacie wynosi: {new_account} ")
+            
 
-    elif Menu_amount == "wplata":
+    elif menu_amount == "wplata":
         input_amount = input("Podaj kwotę wpłaty : ")
         output_amount = float(input_amount)
         new_account = account.deposit(output_amount)
-        if output_amount <= 0:
+
+        if new_account is None:
             print("Nie można wpłacać ujemnych kwot, zera również...")
         else:
             print(f"Saldo po wpłacie: {new_account}")
+
     else: 
         print("Halo, halo co tu się odpierdziela?")
         break
