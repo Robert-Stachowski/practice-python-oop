@@ -5,7 +5,7 @@ class Book:
         self.year = year
 
     def __str__(self):
-        print(f' "{self.title}" - {self.author} ( {self.year} )')
+        return (f' "{self.title}" - {self.author} ( {self.year} )')
 
 b1 = Book("Turbo Pascal dla pierwotniaków", "Robert Es", "1982") 
 b2 = Book("PHP dla Strażaków ;)", "Robert Es", "1998") 
@@ -15,5 +15,5 @@ b5 = Book("Czy kodzenie to nałóg?", "Robert Es", "1999")
 b6 = Book("Gotuj z Mysql", "Robert Es", "2004") 
 
 single = [b1,b2,b3,b4,b5,b6]
-for Book in single:
-    Book.__str__()
+for _ in single:
+    print(_)

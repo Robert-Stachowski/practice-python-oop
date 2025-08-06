@@ -25,5 +25,5 @@ class Bird(Animal):
 
 animals = [Dog("Mruczek"), Dog("Reksio"), Cat("Filemon"), Cat("Bonifacy"), Bird("Ptaszek 1"), Bird("Ptaszek 2")]
 
-for animal in animals:
-    print(f"{animal.name} wydaje dźwięk: {animal.make_sound()}")
+for a in animals:
+    print(f"{a.name} wydaje dźwięk: {a.make_sound()}")

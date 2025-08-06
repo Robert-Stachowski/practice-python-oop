@@ -17,5 +17,5 @@ person_three = Person("Piotr", 35, "Gdańsku")
 #albo:
 
 people = [person_one, person_two, person_three]
-for Person in people:
-    Person.introduce()
+for _ in people:
+    _.introduce()
