@@ -16,7 +16,7 @@ class Teacher(Employee):
 
     def describe(self):
         base = super().describe()
-        return (f" {base} i uczy {self.subject} ")
+        return (f"{base} i uczy {self.subject}.")
 # tu nie jestem przekonany co do poprawności w użyciu super, ponieważ treść zadania sugeruje
 # całkowite nadpisanie describe w Teacher, a nie dziedziczenie i dodawanie kolejnego atrybutu
 # uważam, ze wcześniejsza wersja pliku bardziej pasowała w logikę zadania ;P albo ja nie rozumiem polecenia :D
