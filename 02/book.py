@@ -15,5 +15,5 @@ b5 = Book("Czy kodzenie to nałóg?", "Robert Es", "1999")
 b6 = Book("Gotuj z Mysql", "Robert Es", "2004") 
 
 single = [b1,b2,b3,b4,b5,b6]
-for _ in single:
-    print(_)
+for book in single:
+    print(book)
