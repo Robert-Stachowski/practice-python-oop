@@ -5,7 +5,7 @@ class Person:
         self.city = city
 
     def introduce(self):
-        print(f"Cześć, mam na imię {self.name} , mam {self.age} i mieszkam w {self.city}")
+        print(f"Cześć, mam na imię {self.name}, mam {self.age} i mieszkam w {self.city}")
 
 person_one = Person("Jan", 25, "Warszawie")
 person_two = Person("Anna", 30, "Krakowie")
