@@ -32,5 +32,5 @@ t3 = Teacher("Brajanek Wnuczek", "Historyk", "Historiii")
 t4 = Teacher("Dorota Niuważny", "Chemik(Kobieta-chemik)", "Chemii")
 
 all = [e1,e2,e3,e4,t1,t2,t3,t4]
-for _ in all:
-    print(_.describe())
+for single in all:
+    print(single.describe())
